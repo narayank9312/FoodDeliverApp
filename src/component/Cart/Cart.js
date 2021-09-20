@@ -6,6 +6,7 @@ import classes from './Cart.module.css';
 import CartContext from '../../store/cart-context';
 import Checkout from './Checkout';
 
+
 const Cart = (props) => {
   const [isCheckout, setIsCheckout] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -48,9 +49,9 @@ const Cart = (props) => {
     <ul className={classes['cart-items']}>
       {cartCtx.items.map((item) => (
         <CartItem
-          key={item.id}
+          key={item.id}s
           name={item.name}
-          amount={item.amount}
+          amount={item.amount}s
           price={item.price}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
