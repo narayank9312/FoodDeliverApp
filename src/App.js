@@ -17,6 +17,7 @@ const App = () => {
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
+        
       </main>
     </CartProvider>
   );
